@@ -81,7 +81,7 @@ export default function ProjectCard({
             <div ref={tiltRef} className="thumbnail rounded js-tilt">
               <Image
                 alt="Project Image"
-                className="img-fluid"
+                className="img-fluid rounded-xl"
                 src={image}
                 width={800}
                 height={600}

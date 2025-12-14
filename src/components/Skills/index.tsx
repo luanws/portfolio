@@ -10,6 +10,7 @@ import {
   SiDotnet,
   SiExpo,
   SiExpress,
+  SiFastify,
   SiFirebase,
   SiFlask,
   SiFlutter,
@@ -58,6 +59,7 @@ const frameworks: Skill[] = [
   { name: "React Native", icon: SiReact },
   { name: "Flask", icon: SiFlask },
   { name: "Express.js", icon: SiExpress },
+  { name: "Fastify", icon: SiFastify },
   { name: "Unity", icon: SiUnity },
   { name: "Flutter", icon: SiFlutter },
 ];

@@ -77,7 +77,20 @@ export default function ProjectCard({
       </div>
       <div className={`col-lg-8 col-sm-12 ${isReverse ? "order-lg-1" : ""}`}>
         <div className="project-wrapper__image load-hidden">
-          <a rel="noreferrer" href={demoUrl || "#!"} target="_blank">
+          {demoUrl ? (
+            <a rel="noreferrer" href={demoUrl} target="_blank">
+              <div ref={tiltRef} className="thumbnail rounded js-tilt">
+                <Image
+                  alt="Project Image"
+                  className="img-fluid rounded-xl"
+                  src={image}
+                  width={800}
+                  height={600}
+                  priority={false}
+                />
+              </div>
+            </a>
+          ) : (
             <div ref={tiltRef} className="thumbnail rounded js-tilt">
               <Image
                 alt="Project Image"
@@ -88,7 +101,7 @@ export default function ProjectCard({
                 priority={false}
               />
             </div>
-          </a>
+          )}
         </div>
       </div>
     </div>

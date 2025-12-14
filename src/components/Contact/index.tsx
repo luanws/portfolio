@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact">
       <div className="container">
         <h2 className="section-title">Contato</h2>
-        <div className="contact-wrapper load-hidden">
+        <div className="contact-wrapper">
           <p className="contact-wrapper__text">
             Interessado em meus serviços ou querendo saber mais sobre meu trabalho?
             Não hesite em entrar em contato por e-mail!

@@ -48,7 +48,7 @@ export default function ProjectCard({
   return (
     <div className="row">
       <div className={`col-lg-4 col-sm-12 ${isReverse ? "order-lg-2" : ""}`}>
-        <div className="project-wrapper__text load-hidden">
+        <div className="project-wrapper__text">
           <h3 className="project-wrapper__text-title">{title}</h3>
           <div>
             <p className="mb-4">{children}</p>
@@ -76,7 +76,7 @@ export default function ProjectCard({
         </div>
       </div>
       <div className={`col-lg-8 col-sm-12 ${isReverse ? "order-lg-1" : ""}`}>
-        <div className="project-wrapper__image load-hidden">
+        <div className="project-wrapper__image">
           {demoUrl ? (
             <a rel="noreferrer" href={demoUrl} target="_blank">
               <div ref={tiltRef} className="thumbnail rounded js-tilt">

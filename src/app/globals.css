@@ -18,10 +18,6 @@ html {
   font-size: 62.5%;
 }
 
-html.sr .load-hidden {
-  visibility: hidden;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   text-align: center;

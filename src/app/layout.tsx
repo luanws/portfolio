@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "luanws | developer",
@@ -32,10 +31,6 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
           crossOrigin="anonymous"
-        />
-        <Script
-          src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-          strategy="beforeInteractive"
         />
       </head>
       <body>{children}</body>

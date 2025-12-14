@@ -6,10 +6,10 @@ export default function About() {
   return (
     <section id="about">
       <div className="container">
-        <h2 className="section-title load-hidden pt-24">Sobre mim</h2>
+        <h2 className="section-title pt-24">Sobre mim</h2>
         <div className="row about-wrapper">
           <div className="col-md-6 col-sm-12">
-            <div className="about-wrapper__image load-hidden">
+            <div className="about-wrapper__image">
               <Image
                 alt="Profile Image"
                 className="img-fluid rounded shadow-lg"
@@ -20,7 +20,7 @@ export default function About() {
             </div>
           </div>
           <div className="col-md-6 col-sm-12">
-            <div className="about-wrapper__info load-hidden">
+            <div className="about-wrapper__info">
               <p className="about-wrapper__info-text">
                 Sou programador full stack desde 2019, formado em Engenharia
                 Elétrica pela Universidade Federal de Santa Maria, com ampla

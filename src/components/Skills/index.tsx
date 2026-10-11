@@ -1,5 +1,3 @@
-"use client";
-
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
 import {
@@ -29,6 +27,7 @@ import {
   SiTypescript,
   SiUnity,
 } from "react-icons/si";
+import SectionTitle from "../SectionTitle";
 import { SkillSection } from "./components/SkillSection";
 import { Skill } from "./types/skill";
 
@@ -76,13 +75,19 @@ const otherTech: Skill[] = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="pt-16 pb-32 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <h2 className="section-title text-center mb-12">Tecnologias</h2>
-        <SkillSection skills={languages} title="Linguagens" />
-        <SkillSection skills={databases} title="Bancos de dados" />
-        <SkillSection skills={frameworks} title="Frameworks" />
-        <SkillSection skills={otherTech} title="Outras tecnologias" />
+    <section id="skills" className="px-4 py-24 sm:px-6 sm:py-32">
+      <div className="mx-auto max-w-6xl">
+        <SectionTitle
+          eyebrow="Stack"
+          title="Tecnologias"
+          description="Ferramentas que uso no dia a dia para tirar ideias do papel."
+        />
+        <div className="grid gap-6 lg:grid-cols-2">
+          <SkillSection skills={languages} title="Linguagens" />
+          <SkillSection skills={frameworks} title="Frameworks" />
+          <SkillSection skills={databases} title="Bancos de dados" />
+          <SkillSection skills={otherTech} title="Outras tecnologias" />
+        </div>
       </div>
     </section>
   );

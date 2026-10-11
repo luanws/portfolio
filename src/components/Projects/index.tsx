@@ -1,19 +1,22 @@
-"use client";
-
-import Guestlink from "./components/Guestlink";
-import TCC from "./components/TCC";
-import NewsDelivery from "./components/NewsDelivery";
-import SupermercadoOnline from "./components/SupermercadoOnline";
-import Soundbot from "./components/Soundbot";
-import LudumProBono from "./components/LudumProBono";
+import SectionTitle from "../SectionTitle";
 import AmplifierCircuits from "./components/AmplifierCircuits";
+import Guestlink from "./components/Guestlink";
+import LudumProBono from "./components/LudumProBono";
+import NewsDelivery from "./components/NewsDelivery";
+import Soundbot from "./components/Soundbot";
+import SupermercadoOnline from "./components/SupermercadoOnline";
+import TCC from "./components/TCC";
 
 export default function Projects() {
   return (
-    <section id="projects">
-      <div className="container">
-        <div className="project-wrapper">
-          <h2 className="section-title dark-blue-text">Projetos</h2>
+    <section id="projects" className="px-4 py-24 sm:px-6 sm:py-32">
+      <div className="mx-auto max-w-6xl">
+        <SectionTitle
+          eyebrow="Portfólio"
+          title="Projetos"
+          description="Uma seleção de trabalhos pessoais, acadêmicos e profissionais."
+        />
+        <div className="grid gap-8 md:grid-cols-2">
           <Guestlink />
           <TCC />
           <NewsDelivery />

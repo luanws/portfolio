@@ -1,20 +1,76 @@
-"use client";
+import { FiArrowDown, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+
+const socials = [
+  { href: "https://github.com/luanws", label: "GitHub", icon: FiGithub },
+  { href: "https://www.linkedin.com/in/luanws/", label: "LinkedIn", icon: FiLinkedin },
+  { href: "mailto:luan.w.silveira+portfolio@gmail.com", label: "E-mail", icon: FiMail },
+];
 
 export default function Hero() {
   return (
-    <section id="hero" className="jumbotron">
-      <div className="container">
-        <h1 className="hero-title">
-          Olá, meu nome é <span className="text-color-main">Luan Silveira</span>
+    <section
+      id="top"
+      className="relative flex min-h-screen items-center overflow-hidden px-4 pt-16 sm:px-6"
+    >
+      <div className="bg-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
+      <div className="pointer-events-none absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/20 blur-3xl" />
+
+      <div className="relative mx-auto w-full max-w-6xl">
+        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-300">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+          </span>
+          Disponível para novos projetos
+        </div>
+
+        <h1 className="mt-8 font-display text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+          Olá, meu nome&nbsp;é
           <br />
-          Sou um desenvolvedor full stack.
+          <span className="text-gradient">Luan Silveira</span>
         </h1>
-        <p className="hero-cta">
-          <a rel="noreferrer" className="cta-btn cta-btn--hero" href="#about">
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-400 sm:text-xl">
+          Sou um desenvolvedor full stack. Construo produtos de ponta a ponta, do backend ao
+          frontend web e mobile.
+        </p>
+
+        <div className="mt-10 flex flex-wrap items-center gap-4">
+          <a
+            href="#projects"
+            className="rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:-translate-y-0.5 hover:shadow-blue-600/40"
+          >
+            Ver projetos
+          </a>
+          <a
+            href="#about"
+            className="rounded-full border border-white/15 px-7 py-3.5 font-semibold text-white transition hover:border-white/30 hover:bg-white/5"
+          >
             Saber mais
           </a>
-        </p>
+          <div className="flex items-center gap-2 sm:ml-4">
+            {socials.map(({ href, label, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={label}
+                className="rounded-full p-3 text-zinc-400 transition hover:bg-white/5 hover:text-white"
+              >
+                <Icon size={20} />
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
+
+      <a
+        href="#about"
+        aria-label="Rolar para baixo"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-zinc-500 hover:text-white"
+      >
+        <FiArrowDown size={24} />
+      </a>
     </section>
   );
 }

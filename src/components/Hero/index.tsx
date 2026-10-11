@@ -17,11 +17,8 @@ export default function Hero() {
 
       <div className="relative mx-auto w-full max-w-6xl">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-300">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
-          </span>
-          Disponível para novos projetos
+          <span className="h-2 w-2 rounded-full bg-blue-400" />
+          Engenheiro de Software na WEG
         </div>
 
         <h1 className="mt-8 font-display text-5xl font-bold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -30,16 +27,16 @@ export default function Hero() {
           <span className="text-gradient">Luan Silveira</span>
         </h1>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-zinc-400 sm:text-xl">
-          Sou um desenvolvedor full stack. Construo produtos de ponta a ponta, do backend ao
-          frontend web e mobile.
+          Sou engenheiro de software full stack. Construo sistemas distribuídos e aplicações web
+          com foco em performance, resiliência e produtividade do time.
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <a
-            href="#projects"
+            href="#experience"
             className="rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-7 py-3.5 font-semibold text-white shadow-lg shadow-blue-600/25 transition hover:-translate-y-0.5 hover:shadow-blue-600/40"
           >
-            Ver projetos
+            Ver experiência
           </a>
           <a
             href="#about"

@@ -3,9 +3,9 @@ import { FiFileText } from "react-icons/fi";
 import SectionTitle from "../SectionTitle";
 
 const stats = [
-  { value: "2019", label: "programando desde" },
-  { value: "Full stack", label: "backend, web e mobile" },
-  { value: "UFSM", label: "Engenharia Elétrica" },
+  { value: "~8 anos", label: "de experiência em produção" },
+  { value: "10x", label: "mais rápido com cache distribuído" },
+  { value: "UFSM", label: "Eng. Elétrica e mestrado" },
 ];
 
 export default function About() {
@@ -28,15 +28,16 @@ export default function About() {
 
           <div>
             <p className="text-lg leading-relaxed text-zinc-300">
-              Sou programador full stack desde 2019, formado em Engenharia Elétrica pela
-              Universidade Federal de Santa Maria, com ampla experiência no desenvolvimento de
-              software para Backend, Frontend WEB e Mobile.
+              Sou engenheiro de software full stack, com cerca de 8 anos projetando, construindo e
+              operando sistemas em produção. Atuo principalmente em backend distribuído (Java, Spring
+              Boot, microsserviços, mensageria, cache) e frontend web (TypeScript, React, Next.js),
+              com experiência complementar em mobile e IA aplicada.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-zinc-400">
-              Adquiri experiência em todas as etapas do ciclo de desenvolvimento de software,
-              desde o planejamento, análise, codificação, testes e deploy. Atuei como
-              desenvolvedor de software em empresas, além de freelancers, iniciativas pessoais e
-              atividades de pesquisa e extensão universitária.
+              Investigo gargalos até a causa raiz, tomo decisões de arquitetura orientadas a
+              métricas e crio ferramentas internas que reduzem o custo de desenvolvimento. Sou
+              referência técnica do time na resolução de problemas complexos. Engenheiro
+              Eletricista pela UFSM, hoje no mestrado com pesquisa aplicada em visão computacional.
             </p>
 
             <dl className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">

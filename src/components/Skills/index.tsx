@@ -1,76 +1,136 @@
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiRedis } from "react-icons/di";
 import {
+  SiAmazonsqs,
   SiAmazonwebservices,
-  SiCss3,
+  SiCypress,
   SiDart,
   SiDocker,
   SiDotnet,
+  SiElasticsearch,
   SiExpo,
   SiExpress,
   SiFastify,
   SiFirebase,
   SiFlask,
   SiFlutter,
+  SiFlyway,
   SiGit,
+  SiGithubactions,
+  SiGitlab,
   SiGooglecloud,
-  SiHtml5,
+  SiGraphql,
   SiJavascript,
+  SiJest,
+  SiJunit5,
+  SiKeras,
+  SiKeycloak,
+  SiKotlin,
+  SiLangchain,
+  SiLiquibase,
   SiMongodb,
   SiNextdotjs,
+  SiNodedotjs,
+  SiOpenai,
+  SiOpencv,
   SiOpenjdk,
+  SiPrisma,
   SiPython,
+  SiPytorch,
+  SiRadixui,
   SiReact,
+  SiReactquery,
+  SiScikitlearn,
+  SiShadcnui,
   SiSpringboot,
-  SiSqlite,
+  SiSpringsecurity,
+  SiStorybook,
   SiSupabase,
+  SiTailwindcss,
+  SiTensorflow,
   SiTypescript,
-  SiUnity,
 } from "react-icons/si";
+import { TbApi, TbChartBar, TbTable, TbTestPipe } from "react-icons/tb";
 import SectionTitle from "../SectionTitle";
 import { SkillSection } from "./components/SkillSection";
 import { Skill } from "./types/skill";
 
 const languages: Skill[] = [
-  { name: "Java", icon: SiOpenjdk },
+  { name: "Java", icon: SiOpenjdk, core: true },
+  { name: "TypeScript", icon: SiTypescript, core: true },
   { name: "JavaScript", icon: SiJavascript },
-  { name: "TypeScript", icon: SiTypescript },
   { name: "Python", icon: SiPython },
+  { name: "Kotlin", icon: SiKotlin },
   { name: "C#", icon: SiDotnet },
   { name: "Dart", icon: SiDart },
-  { name: "HTML", icon: SiHtml5 },
-  { name: "CSS", icon: SiCss3 },
 ];
 
-const databases: Skill[] = [
-  { name: "PostgreSQL", icon: BiLogoPostgresql },
-  { name: "MongoDB", icon: SiMongodb },
-  { name: "SQLite", icon: SiSqlite },
-  { name: "Redis", icon: DiRedis },
-  { name: "Firebase Realtime Database", icon: SiFirebase },
-  { name: "Firestore", icon: SiFirebase },
-];
-
-const frameworks: Skill[] = [
-  { name: "Spring Boot", icon: SiSpringboot },
-  { name: "Next.js", icon: SiNextdotjs },
-  { name: "React", icon: SiReact },
-  { name: "React Native", icon: SiReact },
-  { name: "Flask", icon: SiFlask },
-  { name: "Express.js", icon: SiExpress },
+const backend: Skill[] = [
+  { name: "Spring Boot", icon: SiSpringboot, core: true },
+  { name: "Spring Security", icon: SiSpringsecurity },
+  { name: "Node.js", icon: SiNodedotjs, core: true },
   { name: "Fastify", icon: SiFastify },
-  { name: "Unity", icon: SiUnity },
+  { name: "Express.js", icon: SiExpress },
+  { name: "Flask", icon: SiFlask },
+  { name: "GraphQL", icon: SiGraphql },
+  { name: "gRPC", icon: TbApi },
+  { name: "Keycloak", icon: SiKeycloak },
+];
+
+const frontend: Skill[] = [
+  { name: "React", icon: SiReact, core: true },
+  { name: "Next.js", icon: SiNextdotjs, core: true },
+  { name: "Tailwind", icon: SiTailwindcss },
+  { name: "shadcn/ui", icon: SiShadcnui },
+  { name: "Radix UI", icon: SiRadixui },
+  { name: "TanStack Query", icon: SiReactquery },
+  { name: "Storybook", icon: SiStorybook },
+  { name: "AG Grid", icon: TbTable },
+  { name: "AG Charts", icon: TbChartBar },
+  { name: "React Native", icon: SiReact },
+  { name: "Expo", icon: SiExpo },
   { name: "Flutter", icon: SiFlutter },
 ];
 
-const otherTech: Skill[] = [
+const data: Skill[] = [
+  { name: "PostgreSQL", icon: BiLogoPostgresql, core: true },
+  { name: "MongoDB", icon: SiMongodb, core: true },
+  { name: "Redis", icon: DiRedis, core: true },
+  { name: "Elasticsearch", icon: SiElasticsearch },
+  { name: "Prisma", icon: SiPrisma },
+  { name: "Flyway", icon: SiFlyway },
+  { name: "Liquibase", icon: SiLiquibase },
+  { name: "AWS SQS/SNS", icon: SiAmazonsqs },
+  { name: "Firestore", icon: SiFirebase },
+];
+
+const cloud: Skill[] = [
+  { name: "AWS", icon: SiAmazonwebservices, core: true },
+  { name: "Docker", icon: SiDocker, core: true },
+  { name: "GCP", icon: SiGooglecloud },
   { name: "Git", icon: SiGit },
-  { name: "Docker", icon: SiDocker },
-  { name: "Expo", icon: SiExpo },
+  { name: "GitHub Actions", icon: SiGithubactions },
+  { name: "GitLab CI/CD", icon: SiGitlab },
   { name: "Firebase", icon: SiFirebase },
   { name: "Supabase", icon: SiSupabase },
-  { name: "AWS", icon: SiAmazonwebservices },
-  { name: "GCP", icon: SiGooglecloud },
+];
+
+const testing: Skill[] = [
+  { name: "JUnit 5", icon: SiJunit5 },
+  { name: "Mockito", icon: TbTestPipe },
+  { name: "Testcontainers", icon: SiDocker },
+  { name: "Cypress", icon: SiCypress },
+  { name: "Jest", icon: SiJest },
+];
+
+const ai: Skill[] = [
+  { name: "PyTorch", icon: SiPytorch },
+  { name: "TensorFlow", icon: SiTensorflow },
+  { name: "Keras", icon: SiKeras },
+  { name: "OpenCV", icon: SiOpencv },
+  { name: "scikit-learn", icon: SiScikitlearn },
+  { name: "LangChain", icon: SiLangchain },
+  { name: "OpenAI API", icon: SiOpenai },
 ];
 
 export default function Skills() {
@@ -80,13 +140,16 @@ export default function Skills() {
         <SectionTitle
           eyebrow="Stack"
           title="Tecnologias"
-          description="Ferramentas que uso no dia a dia para tirar ideias do papel."
+          description="Ferramentas que uso no dia a dia. Em destaque, minha stack principal."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           <SkillSection skills={languages} title="Linguagens" />
-          <SkillSection skills={frameworks} title="Frameworks" />
-          <SkillSection skills={databases} title="Bancos de dados" />
-          <SkillSection skills={otherTech} title="Outras tecnologias" />
+          <SkillSection skills={backend} title="Backend" />
+          <SkillSection skills={frontend} title="Frontend e mobile" />
+          <SkillSection skills={data} title="Dados e mensageria" />
+          <SkillSection skills={cloud} title="Cloud e DevOps" />
+          <SkillSection skills={testing} title="Testes e qualidade" />
+          <SkillSection skills={ai} title="Inteligência artificial" />
         </div>
       </div>
     </section>

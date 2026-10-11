@@ -4,7 +4,7 @@ import SectionTitle from "../SectionTitle";
 
 const stats = [
   { value: "~8 anos", label: "de experiência em produção" },
-  { value: "10x", label: "mais rápido com cache distribuído" },
+  { value: "Full stack", label: "backend, web e mobile" },
   { value: "UFSM", label: "Eng. Elétrica e mestrado" },
 ];
 

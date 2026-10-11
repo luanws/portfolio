@@ -6,6 +6,7 @@ import NewsDelivery from "./components/NewsDelivery";
 import Soundbot from "./components/Soundbot";
 import SupermercadoOnline from "./components/SupermercadoOnline";
 import TCC from "./components/TCC";
+import WhatsappBotManager from "./components/WhatsappBotManager";
 
 export default function Projects() {
   return (
@@ -17,6 +18,7 @@ export default function Projects() {
           description="Uma seleção de trabalhos pessoais, acadêmicos e profissionais."
         />
         <div className="grid gap-8 md:grid-cols-2">
+          <WhatsappBotManager />
           <Guestlink />
           <TCC />
           <NewsDelivery />

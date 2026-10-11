@@ -24,7 +24,7 @@ export default function ProjectCard({
           src={image}
           fill
           sizes="(min-width: 768px) 50vw, 100vw"
-          unoptimized={image.endsWith(".gif")}
+          unoptimized={/\.(gif|svg)$/.test(image)}
           className="object-cover transition duration-500 group-hover:scale-105"
         />
       </div>

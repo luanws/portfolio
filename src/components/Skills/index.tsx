@@ -56,8 +56,8 @@ import { SkillSection } from "./components/SkillSection";
 import { Skill } from "./types/skill";
 
 const languages: Skill[] = [
-  { name: "Java", icon: SiOpenjdk, core: true },
-  { name: "TypeScript", icon: SiTypescript, core: true },
+  { name: "Java", icon: SiOpenjdk },
+  { name: "TypeScript", icon: SiTypescript },
   { name: "JavaScript", icon: SiJavascript },
   { name: "Python", icon: SiPython },
   { name: "Kotlin", icon: SiKotlin },
@@ -66,9 +66,9 @@ const languages: Skill[] = [
 ];
 
 const backend: Skill[] = [
-  { name: "Spring Boot", icon: SiSpringboot, core: true },
+  { name: "Spring Boot", icon: SiSpringboot },
   { name: "Spring Security", icon: SiSpringsecurity },
-  { name: "Node.js", icon: SiNodedotjs, core: true },
+  { name: "Node.js", icon: SiNodedotjs },
   { name: "Fastify", icon: SiFastify },
   { name: "Express.js", icon: SiExpress },
   { name: "Flask", icon: SiFlask },
@@ -78,8 +78,8 @@ const backend: Skill[] = [
 ];
 
 const frontend: Skill[] = [
-  { name: "React", icon: SiReact, core: true },
-  { name: "Next.js", icon: SiNextdotjs, core: true },
+  { name: "React", icon: SiReact },
+  { name: "Next.js", icon: SiNextdotjs },
   { name: "Tailwind", icon: SiTailwindcss },
   { name: "shadcn/ui", icon: SiShadcnui },
   { name: "Radix UI", icon: SiRadixui },
@@ -93,9 +93,9 @@ const frontend: Skill[] = [
 ];
 
 const data: Skill[] = [
-  { name: "PostgreSQL", icon: BiLogoPostgresql, core: true },
-  { name: "MongoDB", icon: SiMongodb, core: true },
-  { name: "Redis", icon: DiRedis, core: true },
+  { name: "PostgreSQL", icon: BiLogoPostgresql },
+  { name: "MongoDB", icon: SiMongodb },
+  { name: "Redis", icon: DiRedis },
   { name: "Elasticsearch", icon: SiElasticsearch },
   { name: "Prisma", icon: SiPrisma },
   { name: "Flyway", icon: SiFlyway },
@@ -105,8 +105,8 @@ const data: Skill[] = [
 ];
 
 const cloud: Skill[] = [
-  { name: "AWS", icon: SiAmazonwebservices, core: true },
-  { name: "Docker", icon: SiDocker, core: true },
+  { name: "AWS", icon: SiAmazonwebservices },
+  { name: "Docker", icon: SiDocker },
   { name: "GCP", icon: SiGooglecloud },
   { name: "Git", icon: SiGit },
   { name: "GitHub Actions", icon: SiGithubactions },
@@ -140,7 +140,7 @@ export default function Skills() {
         <SectionTitle
           eyebrow="Stack"
           title="Tecnologias"
-          description="Ferramentas que uso no dia a dia. Em destaque, minha stack principal."
+          description="Ferramentas que uso no dia a dia para tirar ideias do papel."
         />
         <div className="grid gap-6 lg:grid-cols-2">
           <SkillSection skills={languages} title="Linguagens" />
